@@ -13,8 +13,8 @@
 - hive-metastore
 - hive-server
 - hive-webhcat
-#### Hue
-#### Livy
+#### Hue - an open-source SQL Cloud Editor, licensed under the Apache License 2.0
+#### Livy - an open source REST interface for interacting with Apache Spark from anywhere
 #### Postgres
 #### Spark
 - spark-base
