@@ -44,7 +44,7 @@ def download_rates():
 ```
 with DAG(dag_id="forex_data_pipeline_v_9", schedule_interval="@daily", default_args=default_args, catchup=False) as dag:
 
-### Checking the file having the forex pairs to watch 
+### Checking the forex API
 ```    
     is_forex_rates_available = HttpSensor(
         task_id="is_forex_rates_available",
