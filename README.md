@@ -1,4 +1,30 @@
 # Airflow_forexExample
+
+#### Airflow
+#### Hadoop
+- hadoop-base
+- hadoop-datanode
+- hadoop-historyserver
+- haddop-namenode
+- hadoop-nodemanager
+- hadoop-resourcemanager
+#### Hive
+- hive-base
+- hive-metastore
+- hive-server
+- hive-webhcat
+#### Hue
+#### Livy
+#### Postgres
+#### Spark
+- spark-base
+- spark-master
+- spark-submit
+- spark-worker
+#### Vagrant 
+- To create and configure lightweight, reproducible and portable development environments
+- Used for creating the Kubernetes clusterlocally
+
 ```
 from airflow import DAG
 from airflow.sensors.http_sensor import HttpSensor
@@ -107,7 +133,7 @@ creating_forex_rates_table = HiveOperator(
         """
     )
 ```
- ### Processing the rayes with Spark
+ ### Processing the raTes with Spark
 ```
     forex_processing = SparkSubmitOperator(
         task_id="forex_processing",
